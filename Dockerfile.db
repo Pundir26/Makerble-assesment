@@ -1,0 +1,10 @@
+FROM postgres:latest
+
+# Set the environment variables for PostgreSQL
+ENV POSTGRES_DB myapp_development
+ENV POSTGRES_USER postgres
+ENV POSTGRES_PASSWORD mysecretpassword
+ENV HOST postgres-service
+
+# Expose the PostgreSQL port
+EXPOSE 5432
